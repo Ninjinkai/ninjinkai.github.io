@@ -296,3 +296,39 @@ section {
         scroll-behavior: smooth;
     }
 }
+
+/* Reduce section padding for compact layout */
+section {
+    padding: 2rem 0 !important;
+}
+
+#home, #featured {
+    padding: 2.5rem 0 !important;
+}
+
+#work, #education {
+    padding: 2rem 0 !important;
+}
+
+#about, #contact {
+    padding: 2rem 0 !important;
+}
+
+/* Tighter card spacing */
+.card {
+    margin-bottom: 1rem !important;
+}
+
+.card:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Reduce header margins */
+h2.display-6 {
+    margin-bottom: 2.5rem !important;
+}
+
+/* Compact featured cards */
+#featured .col-lg-4 {
+    margin-bottom: 1rem !important;
+}
