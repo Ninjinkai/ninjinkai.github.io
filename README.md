@@ -1,52 +1,126 @@
 # Nick Petty's Portfolio
 
-A modern, responsive portfolio website showcasing projects, experience, and contact information.
+A modern, modular portfolio built with Jekyll for GitHub Pages. Features responsive design, AI/ML focus, and a clean component-based architecture.
 
-## 🎨 Features
+## ✨ Features
 
+- **Jekyll-powered**: Native GitHub Pages support, automatic builds
+- **Component-driven**: Modular includes for easy maintenance
 - **Responsive Design**: Mobile-first approach with Bootstrap 5
-- **Modern Styling**: Clean, contemporary design with smooth animations
+- **Modern Styling**: Clean, contemporary design with smooth interactions
 - **Accessibility**: Semantic HTML5 and ARIA attributes
-- **Fast Loading**: CDN-hosted Bootstrap for optimal performance
-- **SEO Optimized**: Proper meta tags and semantic markup
-- **Multiple Sections**: Home, Work, About, and Contact sections with smooth navigation
+- **SEO Optimized**: Proper meta tags via `_config.yml`
+- **Sections**: Hero, Experience, About (with Skills), and Contact
 
 ## 🛠️ Tech Stack
 
+- **Static Site Generator**: Jekyll
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
 - **Framework**: Bootstrap 5.3.0
-- **Deployment**: GitHub Pages
+- **Deployment**: GitHub Pages (automatic)
 - **Version Control**: Git
 
 ## 📁 Project Structure
 
 ```
 ninjinkai.github.io/
-├── index.html          # Main portfolio page
+├── _config.yml              # Jekyll configuration & site metadata
+├── _layouts/
+│   └── default.html         # Base HTML template
+├── _includes/               # Reusable page components
+│   ├── header.html          # Navigation header
+│   ├── hero.html            # Hero/intro section
+│   ├── featured.html        # Featured cards (Experience, About, Contact)
+│   ├── work.html            # Work history timeline
+│   ├── about.html           # About section with skills & languages
+│   ├── contact.html         # Contact information
+│   └── footer.html          # Footer
+├── index.md                 # Main page (uses default layout)
 ├── css/
-│   ├── bootstrap.css   # Bootstrap framework (optional - using CDN)
-│   └── custom.css      # Custom styles and animations
+│   ├── bootstrap.css        # Bootstrap framework
+│   └── custom.css           # Site-specific styles
 ├── img/
-│   ├── mac.jpg        # Work section image
-│   ├── alligator.jpg  # About section image
-│   ├── contact.jpg    # Contact section image
-│   ├── pink_wall.jpg  # Project showcase
-│   ├── pink_stairs.jpg # Project showcase
-│   ├── pink_building.jpg # Project showcase
-│   ├── pink_hand.jpg  # Project showcase
-│   └── favicon.ico    # Site icon
-└── README.md          # This file
+│   ├── mac.jpg              # Featured images
+│   ├── alligator.jpg
+│   ├── contact.jpg
+│   └── favicon.ico
+├── .gitignore               # Build artifacts excluded
+├── README.md                # This file
+└── README_JEKYLL.md         # Detailed Jekyll workflow doc
 ```
 
 ## 🚀 Getting Started
 
-### Local Development
+### View Live
 
-1. Clone the repository:
+Visit: **https://ninjinkai.github.io**
+
+### Local Development (requires Jekyll)
+
 ```bash
 git clone https://github.com/ninjinkai/ninjinkai.github.io.git
 cd ninjinkai.github.io
+bundle install
+bundle exec jekyll serve
 ```
+
+Visit `http://localhost:4000` to preview.
+
+### Editing Content
+
+- **Hero/About/Skills**: Edit `_includes/about.html`
+- **Work History**: Edit `_includes/work.html`
+- **Contact Links**: Edit `_includes/contact.html`
+- **Navigation**: Edit `_includes/header.html`
+- **Site Metadata**: Edit `_config.yml`
+
+Changes are reflected automatically when you `git push`.
+
+## 📋 Page Sections
+
+### Home (Hero)
+Introduction and headline with call-to-action to other sections.
+
+### Experience
+Featured cards linking to detailed work history including:
+- **Modernizing Medicine** — Senior QA Engineer (8+ years current role)
+- **DSS, Inc.** — QA Analyst roles
+- **Unify** — Co-op in QA & Software Engineering
+- **Apple** — Family Room Specialist
+- **Berlitz Japan** — English Instructor
+
+### About
+Professional summary, core expertise focus on QA, test automation, and **AI/ML in QA**. Includes skills matrix and languages spoken (English, French, Japanese).
+
+### Contact
+Direct links to email, GitHub, and LinkedIn.
+
+## 🎯 Key Skills
+
+- **QA Expertise**: Manual testing, test automation (Java/Selenium)
+- **Test Tools**: TestRail, Jira, Git
+- **AI/ML**: Test optimization, intelligent test case generation
+- **Languages**: English (Native), French (Elementary), Japanese (Limited Working)
+
+## 🔄 Deployment
+
+Push any changes to the `main` branch. GitHub Pages automatically builds and deploys via Jekyll.
+
+```bash
+git add .
+git commit -m "Your message here"
+git push origin main
+```
+
+## 📧 Contact
+
+- **Email**: nickpetty@hotmail.com
+- **LinkedIn**: [linkedin.com/in/nicholasepetty](https://www.linkedin.com/in/nicholasepetty/)
+- **GitHub**: [github.com/ninjinkai](https://github.com/ninjinkai)
+
+---
+
+*Built with Jekyll • Hosted on GitHub Pages • Updated Feb 2026*
 
 2. Open `index.html` in your web browser or use a local server:
 ```bash
