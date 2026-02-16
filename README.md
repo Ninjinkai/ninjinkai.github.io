@@ -6,11 +6,12 @@ A modern, modular portfolio built with Jekyll for GitHub Pages. Features respons
 
 - **Jekyll-powered**: Native GitHub Pages support, automatic builds
 - **Component-driven**: Modular includes for easy maintenance
-- **Responsive Design**: Mobile-first approach with Bootstrap 5
+- **Responsive Grid Layout**: Compact, side-by-side cards (Work 2-col, Education 3-col)
 - **Modern Styling**: Clean, contemporary design with smooth interactions
 - **Accessibility**: Semantic HTML5 and ARIA attributes
 - **SEO Optimized**: Proper meta tags via `_config.yml`
-- **Sections**: Hero, Experience, About (with Skills), and Contact
+- **AI/ML Focus**: Highlighted expertise in QA automation and AI-driven testing
+- **Complete Sections**: Hero, Experience, Education, About (with Skills/Languages), and Contact
 
 ## 🛠️ Tech Stack
 
@@ -30,8 +31,9 @@ ninjinkai.github.io/
 ├── _includes/               # Reusable page components
 │   ├── header.html          # Navigation header
 │   ├── hero.html            # Hero/intro section
-│   ├── featured.html        # Featured cards (Experience, About, Contact)
-│   ├── work.html            # Work history timeline
+│   ├── featured.html        # Featured cards (Experience, About, Education, Contact)
+│   ├── work.html            # Work history in 2-column grid
+│   ├── education.html       # Education degrees in 3-column grid
 │   ├── about.html           # About section with skills & languages
 │   ├── contact.html         # Contact information
 │   └── footer.html          # Footer
@@ -69,7 +71,9 @@ Visit `http://localhost:4000` to preview.
 ### Editing Content
 
 - **Hero/About/Skills**: Edit `_includes/about.html`
-- **Work History**: Edit `_includes/work.html`
+- **Work Experience**: Edit `_includes/work.html` (2-column grid layout)
+- **Education**: Edit `_includes/education.html` (3-column grid layout)
+- **Featured Cards**: Edit `_includes/featured.html`
 - **Contact Links**: Edit `_includes/contact.html`
 - **Navigation**: Edit `_includes/header.html`
 - **Site Metadata**: Edit `_config.yml`
@@ -79,30 +83,59 @@ Changes are reflected automatically when you `git push`.
 ## 📋 Page Sections
 
 ### Home (Hero)
-Introduction and headline with call-to-action to other sections.
+Introduction with professional headline and call-to-action summary.
+
+### Featured Cards
+Quick-access navigation cards (2x2 grid):
+- **Experience** — Links to detailed work history
+- **About** — Links to skills and professional summary
+- **Education** — Links to degree details
+- **Contact** — Call-to-action for get in touch
 
 ### Experience
-Featured cards linking to detailed work history including:
-- **Modernizing Medicine** — Senior QA Engineer (8+ years current role)
+Work history in a dense **2-column grid layout**:
+- **Modernizing Medicine** — Senior QA Engineer (8+ years)
 - **DSS, Inc.** — QA Analyst roles
 - **Unify** — Co-op in QA & Software Engineering
 - **Apple** — Family Room Specialist
 - **Berlitz Japan** — English Instructor
 
+Each card shows key responsibilities and technologies.
+
+### Education
+Education in a **3-column grid layout** (most recent first):
+- **Master of Science** — Computer Science (Florida Atlantic, 2016-2017)
+- **Bachelor of Science** — Computer Science (Florida Atlantic, 2014-2015)
+- **Bachelor of Science** — Mathematics (University of Florida, 1999-2003)
+
 ### About
-Professional summary, core expertise focus on QA, test automation, and **AI/ML in QA**. Includes skills matrix and languages spoken (English, French, Japanese).
+Professional summary with organized skills:
+- **Technical Skills**: Test Automation, Java, Selenium, TestRail, Git
+- **QA Expertise**: Manual/Automated Testing (UI & API), Interviewing, Mentoring, AI/ML in QA
+- **Languages**: English (Native), Japanese (Elementary), French (Limited)
 
 ### Contact
-Direct links to email, GitHub, and LinkedIn.
+Direct links to:
+- Email (nickpetty@hotmail.com)
+- GitHub (github.com/ninjinkai)
+- LinkedIn (linkedin.com/in/nicholasepetty)
 
-## 🎯 Key Skills
+## 🎯 Key Skills & Focus
 
-- **QA Expertise**: Manual testing, test automation (Java/Selenium)
+- **QA Expertise**: Manual testing, test automation (Java/Selenium, UI & API)
 - **Test Tools**: TestRail, Jira, Git
 - **AI/ML**: Test optimization, intelligent test case generation
-- **Languages**: English (Native), French (Elementary), Japanese (Limited Working)
+- **Soft Skills**: Interviewing, mentoring, team leadership
+- **Languages**: English (Native), Japanese (Elementary), French (Limited)
+- **Education**: M.S. & B.S. Computer Science, B.S. Mathematics
 
-## 🔄 Deployment
+## � Layout & Design
+
+- **Compact Design**: Reduced padding and spacing to minimize scrolling
+- **Grid Layouts**: Work experience (2 columns), Education (3 columns) for dense information display
+- **Skills Badges**: Organized skills by category using clean badge styling instead of progress bars
+- **Responsive**: Mobile-first (1 column), tablet (2 columns), desktop (full grid)
+- **Feature Cards**: 2x2 grid for quick navigation to all major sections
 
 Push any changes to the `main` branch. GitHub Pages automatically builds and deploys via Jekyll.
 
