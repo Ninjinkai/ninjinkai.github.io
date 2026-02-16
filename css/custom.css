@@ -335,7 +335,9 @@ h2.display-6 {
 
 /* Circular profile images */
 .rounded-circle {
+    width: 120px !important;
+    height: 120px !important;
     object-fit: cover;
     object-position: center;
-    overflow: hidden;
+    display: block;
 }
