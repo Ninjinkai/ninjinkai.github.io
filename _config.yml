@@ -1,0 +1,22 @@
+# Jekyll Configuration for GitHub Pages
+title: Nick Petty's Portfolio
+email: nickpetty@hotmail.com
+description: Senior QA Engineer | Test Automation | Software Quality Assurance
+url: https://ninjinkai.github.io
+github_username: ninjinkai
+linkedin_username: nicholasepetty
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+
+# Include custom files
+include: [".nojekyll"]
+
+# Exclude files from build
+exclude:
+  - README.md
+  - .gitignore
+  - scripts/
