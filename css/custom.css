@@ -332,3 +332,9 @@ h2.display-6 {
 #featured .col-lg-4 {
     margin-bottom: 1rem !important;
 }
+
+/* Circular profile images */
+.rounded-circle {
+    object-fit: cover;
+    object-position: center;
+}
