@@ -337,4 +337,5 @@ h2.display-6 {
 .rounded-circle {
     object-fit: cover;
     object-position: center;
+    overflow: hidden;
 }
